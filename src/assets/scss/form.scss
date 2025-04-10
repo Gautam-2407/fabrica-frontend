@@ -1,0 +1,76 @@
+$primary: #eed9c3;
+$secondary: #e8c8a4; 
+$text-mute:#666;
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient($secondary 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/linen.png');
+    opacity: 0.2; 
+    z-index: 0;
+  }
+
+  .login-form {
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding:2.5em 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    h2{
+      font-size:30px;
+      font-weight: 600;
+    }
+    .form-group {
+      margin-top:1.5em;
+      margin-bottom: 15px;
+      text-align: left;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+
+}
+
+
+.form-footer {
+    margin-top: 1em;
+    font-size: 15px;
+    color: $text-mute;
+  
+    a {
+      color: $secondary;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

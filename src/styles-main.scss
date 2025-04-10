@@ -1,0 +1,12 @@
+$primary: #eed9c3;
+$secondary: #e8c8a4; 
+$text-mute:#666;
+.submit-btn {
+    background-color: $secondary;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+}
